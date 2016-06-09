@@ -1,0 +1,764 @@
+
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+/*constants*/
+
+$value: 300ms;
+$minimumValue: 300;
+$firstValue: 500;
+$secondValue: 600;
+$nothing: none;
+$celeste: #69D2E7;
+$celesteagua: #A7DBDB;
+$brown: #E0E4CC;
+$orange: #F38630;
+$naranja: #FA6900;
+$rosado: #E94C6F;
+$marron: #542733;
+$gray: #5A6A62;
+$plomo: #C6D5CD;
+$yellow: #FDF200;
+$rojillo: #DB3340;
+$mostaza: #E8B71A;
+$crema: #F7EAC8;
+$verde: #1FDA9A;
+$azul: #28ABE3;
+$verdoso: #588C73;
+$palido: #F2E394;
+$piel: #F2AE72;
+$rojoleve: #D96459;
+$marronpuro: #8C4646;
+$golden: #D0C91F;
+$celestillo: #85C4B9;
+$azulado: #008BBA;
+$rojopink: #DF514C;
+$rojosangre: #DC403B;
+/****/
+
+/*Mixins*/
+@mixin botones($radio, $color) {
+border-radius: $radio;
+color: $color;
+}
+
+@mixin padding-margin-ib {
+    padding: 0 5% 9%;
+    margin-right: -5px;
+    display: inline-block;
+}
+
+@mixin hr {
+    width: 220px;
+    border-top: 1px solid #dfdfdf;
+}
+
+@mixin btn {
+    background-color: #443E44;
+    color: #fff;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+
+/*HEADER*/
+
+.banner{
+	background-image: url("../img/carousel-bg.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	color:white;
+	.opaco{
+    	width: 100%;
+    	height: 100%;
+    	padding: 8% 5%;
+    	h1{
+    		font-size: 4em;
+    		text-align: center;
+    		padding-top: 4%;
+    		}
+    	.btn{
+    		    border-radius: 200px;
+    			padding: 1.5% 4%;
+    			margin: 0% 1% 5%;
+    		}
+    	a{
+    		display: inline-block;
+    		color:white;
+    		margin:0% 1%;
+    		i{
+    			margin-right: 5px;
+    		}
+    	}
+    	p{
+    		display:inline-block;
+    		margin-right: 5%;
+    	}
+    	}
+	}
+.navbar{
+	background-color: #27AD60;
+	margin-bottom: 0;
+	padding: 20px 0;
+	position: fixed;
+	z-index: 100;
+	font-weight: normal;
+    border-color: transparent;
+    .navbar-brand{
+    	padding: 0;
+    }
+}
+.navbar-default .navbar-nav > li > a {
+	color: white;
+	&:hover {
+		background-color: $verde;
+	}
+}
+
+.opaco {
+	p {
+		font-size: 25px;
+		font-weight: normal;
+	}
+}
+.parrafo {
+	padding-bottom: 4%;
+	font-weight: normal;
+}
+h3 {
+	padding-bottom: 3%;
+}
+.bg-pink{
+    background-color: rgba(67, 148, 240, 0.7);
+    background-attachment: fixed;
+}
+.hola {
+	color: white;
+	padding-top: 12%;
+	margin-bottom: 4%;
+	font-family: sans-serif;
+	font-size: 40px;
+	font-weight: normal;
+	font-family: sans-serif;
+}
+/* Package*/
+.package {
+	h1 {
+		text-align: center;
+		font-size: 4em;
+	}
+	hr {
+		width: 30%;
+		position: relative;
+		right: -35%;
+	}
+}
+
+.caja-box {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.caja-box {
+    .color1 {
+        background-color: $celeste;
+        @include padding-margin-ib;
+    }
+
+    .color2 {
+        background-color: $celesteagua;
+        @include padding-margin-ib;
+    }
+
+    .color3 {
+        background-color: $brown;
+        @include padding-margin-ib;
+    }
+
+    .color4 {
+        background-color: $orange;
+        @include padding-margin-ib;
+    }
+
+    .color5 {
+        background-color: $naranja;
+        @include padding-margin-ib;
+    }
+
+    .color6 {
+        background-color: $rosado;
+        @include padding-margin-ib;
+    }
+
+    .color7 {
+        background-color: $marron;
+        @include padding-margin-ib;
+        color: #fff;
+    }
+
+    .color8 {
+        background-color: $gray;
+        @include padding-margin-ib;
+    }
+
+    .color9 {
+        background-color: $plomo;
+        @include padding-margin-ib;
+    }
+
+    .color10 {
+        background-color: $yellow;
+        @include padding-margin-ib;
+    }
+
+    .color11 {
+        background-color: $rojillo;
+        @include padding-margin-ib;
+    }
+
+    .color12 {
+        background-color: $mostaza;
+        @include padding-margin-ib;
+    }
+
+    .color13 {
+        background-color: $crema;
+        @include padding-margin-ib;
+    }
+
+    .color14 {
+        background-color: $verde;
+        @include padding-margin-ib;
+    }
+
+    .color15 {
+        background-color: $azul;
+        @include padding-margin-ib;
+    }
+
+    .color16 {
+        background-color: $verdoso;
+        @include padding-margin-ib;
+    }
+
+    .color17 {
+        background-color: $palido;
+        @include padding-margin-ib;
+    }
+
+    .color18 {
+        background-color: $piel;
+        @include padding-margin-ib;
+    }
+
+    .color19 {
+        background-color: $rojoleve;
+        @include padding-margin-ib;
+    }
+
+    .color20 {
+        background-color: $marronpuro;
+        @include padding-margin-ib;
+    }
+
+    .color21 {
+        background-color: $golden;
+        @include padding-margin-ib;
+    }
+
+    .color22 {
+        background-color: $celestillo;
+        @include padding-margin-ib;
+    }
+
+    .color23 {
+        background-color: $azulado;
+        @include padding-margin-ib;
+    }
+
+    .color24 {
+        background-color: $rojopink;
+        @include padding-margin-ib;
+    }
+
+    .color25 {
+        background-color: $rojosangre;
+        @include padding-margin-ib;
+    }
+
+}
+
+/*BARRAS*/
+.about {
+	background-color: #2C3E50;
+	padding-bottom: 8%;
+	padding-top: 5%;
+	h1 {
+		color: white;
+		font-family: sans-serif;
+		text-align: center;
+	    font-size: 50px;}
+	hr {
+		width: 20%;
+		position: relative;
+		right: -40%;
+		margin-bottom: 8%;
+	}
+	p, {
+		color: white;
+		font-family: sans-serif;
+		font-weight: $minimumValue;
+	    padding-left: 14%;
+	    padding-bottom: 5%;
+	    padding-right: 5%;}
+	h4 {
+		color: white;}
+	.green, .blue, .sky, .orange, .red {
+		background-color: $orange;
+	}
+	.caja, h4 {
+		position: relative;
+		right: -14%;
+		box-shadow: 5px white;
+	}
+	img {
+		width: 80%;
+		padding-left: 8%;
+	}
+
+}
+.caja {
+	width: 80%;
+	background-color: white;
+}
+.green {
+	width: 60%;
+	color: white;
+	padding: 1.5% 4%;
+	margin-top: 3%;
+}
+.blue {
+	width: 40%;
+	color: white;
+	padding: 1.5% 4%;
+	margin-top: 3%;
+}
+.sky {
+	width: 50%;
+	color: white;
+	padding: 1.5% 4%;
+	margin-top: 3%;
+}
+.orange {
+	width: 70%;
+	color: white;
+	padding: 1.5% 4%;
+	margin-top: 3%;
+}
+.red {
+	width: 85%;
+	color: white;
+	padding: 1.5% 4%;
+	box-shadow: 0 0px -10px 0px blue;
+}
+/*SECTION WE DO*/
+.we-do {
+	background-color: #27AD60;
+	padding-top: 7%;
+	h1 {
+		color: white;
+		font-family: sans-serif;
+		text-align: center;
+	    font-size: 50px;}
+	h2 {
+        color: white;
+	}
+	hr {
+		width: 20%;
+		position: relative;
+		right: -40%;
+	}
+	p {
+		color: white;
+		text-align: center;
+		font-family: sans-serif;
+		padding-bottom: 5%;
+	}
+	h2 {
+		text-align: center;
+	}
+}
+
+.services{
+	padding-bottom: 10%; 
+    hr{
+        display: none;
+    }
+}
+.fondo_img {
+	text-align: center;
+}
+
+.services:hover{
+    background-color: #2A7257;
+    width: 20%;
+    height: 450px;
+    h2{
+        color:#A96931;
+    }
+    hr{
+        width: 60%;
+        display: block;
+    }
+    .fondo_img{;
+    -ms-transform: rotate(75deg); /* IE 9 */
+   -webkit-transform: rotate(75deg); /* Safari */
+   transform: rotate(75deg); /* Standard syntax */
+   background: #A96931;
+    }
+
+}
+.boton {
+    background-color: #443E44;
+    padding: 10px 20px;
+    position: relative;
+    right: -45%;
+    &:hover{
+        background-color: #A96931;
+    }
+}
+
+.boton {
+@include botones(10px, #AAAAAA);}
+
+/*Team*/
+.team {
+	background-color: #27AD60;
+	padding-top: 7%;
+	padding-bottom: 10%;
+	h1 {
+		color: white;
+		font-family: sans-serif;
+		text-align: center;
+	    font-size: 50px;}
+	hr {
+		width: 20%;
+		position: relative;
+		right: -40%;
+	}
+	p {
+		color: white;
+		text-align: center;
+		font-family: sans-serif;
+		padding-bottom: 8%;
+		padding-right: 7%;
+		padding-left: 7%;
+	}
+	h3, h5 {
+		color: white;
+		text-align: center;
+			}
+}
+.playteam {
+	.linea {
+       position: relative;
+       left: -23%;
+	hr {
+		border: 1px dashed $orange;
+		height: 0;
+		width: 70%;
+	}
+ }
+}
+.jane{
+	width: 150px;
+	height: 150px;
+	background-image: url(../img/team/1.jpg);
+	background-position: 45%;
+	background-size: 140%;
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	margin-top: 2%;
+}
+i {
+	font-size: 25px;
+	margin: 2%;
+	color: white;
+}
+.iconos {
+	text-align: center;
+}
+/*Price*/
+.price {
+	background-color: #2C3E50;
+	padding-top: 7%;
+	h1 {
+		color: white;
+		font-family: sans-serif;
+		text-align: center;
+	    font-size: 50px;}
+	h3 {
+		text-align: center;
+	}
+	hr {
+		width: 20%;
+		position: relative;
+		right: -40%;
+	}
+	p {
+		color: white;
+		text-align: center;
+		font-family: sans-serif;
+	}
+}
+
+.bg-brown{
+	background-color: #8F5F38;
+}
+.bg-black{
+	background-color: #000;
+}
+.bg-blue{
+	background-color: none;
+}
+.prices-section{
+	padding-bottom: 100px;
+	padding-top: 100px;
+	.separador{
+		margin-bottom: 55px;
+	}
+}
+
+.prices-box{
+	margin-top: 70px;
+	border: 1px solid green;
+	cursor: context-menu;
+	h3{
+		color: gray;
+		margin-bottom: 20px;
+		font-weight: 400;
+	}
+	&:hover, &:focus{
+		margin-top: 20px;
+		border: 2px solid orange;
+	}
+}
+.price-green-box{
+	background-color: green;
+	p:first-child{
+		padding-top: 15px;
+		span{
+			font-size: 45px;
+			font-weight: 400;
+		}
+	}
+	p:nth-child(2){
+		padding-bottom: 20px;
+	}
+}
+.price-white-box{
+	background-color: #F5F5F5;
+	width: 100%;
+	color: blue;
+	font-weight: 500;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.box-blue{
+	background-color: transparent;
+	width: 100%;
+	padding-top: 35px;
+	padding-bottom: 25px;
+	margin: 0px;
+	a  {
+		padding: 2% 4%;
+		background-color: gray;
+	}
+}
+.prices-box {
+		.price-white-box {
+		color: black;
+	}
+}
+
+/*Clients*/
+.clients {
+	background-color: #2C3E50;
+	padding-top: 7%;
+	padding-bottom: 10%;
+	h1 {
+		color: white;
+		font-family: sans-serif;
+		text-align: center;
+	    font-size: 50px;}
+	hr {
+		width: 20%;
+		position: relative;
+		right: -40%;
+	}
+	.parrafos {
+		color: white;
+		text-align: center;
+		font-family: sans-serif;
+	}
+	h4 {
+		color: $orange;
+		text-align: center;
+		margin: 0;
+	}
+}
+.parrafo {
+	color: #A7AAAD;
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-bottom: 0;
+	padding-top: 5%;
+}
+
+/*Formulario*/
+.formulario {
+	background-color: #2C3E50;
+	padding-top: 7%;
+	padding-bottom: 10%;
+	h1 {
+		color: white;
+		font-family: sans-serif;
+		text-align: center;
+	    font-size: 50px;}
+	hr {
+		width: 20%;
+		position: relative;
+		right: -40%;
+	}
+	p {
+		color: white;
+		text-align: center;
+		font-family: sans-serif;
+		padding-bottom: 5%;
+	}
+	.leave {
+      width: 83%;
+      margin-left: 3%;
+      position: relative;
+      right: -18%;
+
+	    form {
+		width: 65%;
+		text-align: center;
+	   }
+	   input {
+	   	height: 40px;
+	   }
+}
+}
+button {
+	padding: 1% 4%;
+	font-size: 20px;
+	margin-top: 5%;
+}
+.parrafo1 {
+	float: left;
+}
+/*Fondo*/
+.fondo {
+	background-image: url("../img/img-divider-img.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 20% 37%;
+	height: 129px;
+}
+.fondo2 {
+	background-image: url("../img/img-divider-img.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 20% 2%;
+	height: 370px;
+	.iconos {
+      padding-top: 7%;
+
+    i {
+    	font-size: 100px;
+    }
+   }
+}
+
+/*Footer*/
+footer {
+	background-color: #27AD60;
+	padding-top: 2%;
+	padding-bottom: 1%;
+	h3 {
+		color: white;
+		font-family: sans-serif;
+		font-weight: normal;
+		text-align: center;}
+	hr {
+		width: 20%;
+		position: relative;
+		right: -40%;
+	}
+	.parrafos {
+		color: white;
+		text-align: center;
+		font-family: sans-serif;
+	}
+	i {
+		font-size: 17px;
+	}
+}
+.blanco {
+		color: white;
+	}
+.parrafo-white {
+		color: white;
+		padding-left: 12%;
+	}
+
+/*final*/
+.footer-info{
+	padding-top: 35px;
+	padding-bottom: 50px;
+	.separador{
+		height: 1px;
+		width: 60px;
+	}
+	h4{
+		text-align: center;
+		color: white;
+		font-weight: 300;
+		text-transform: capitalize;
+		padding-bottom: 15px;
+	}
+	a{
+		color: white;
+	}
+	.botones{
+		padding: 10px 15px;
+		margin-top: 35px;
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.input-group{
+		.input-group-addon {
+    		padding: 0px 12px;
+		}
+		i{
+			color: orange;
+		}
+	}
+}
